@@ -14,7 +14,7 @@
         <junit.jupiter.version>5.6.2</junit.jupiter.version>
         <testng.version>7.0.0</testng.version>
         <log4j.version>2.13.2</log4j.version>
-        <jackson.version>2.7.4</jackson.version>
+        <jackson.version>2.11.0</jackson.version>
         <owner.version>1.0.8</owner.version>
         <assertj.version>3.16.1</assertj.version>
 
