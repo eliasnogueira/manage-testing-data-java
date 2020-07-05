@@ -1,7 +1,7 @@
 <suite name="My test suite">
     <test name="numbersXML">
         <parameter name="product" value="Micro SD Card 16Gb"/>
-        <parameter name="amount" value="6.09"/>
+        <parameter name="amount" value="7.00"/>
         <classes>
             <class name="com.eliasnogueira.datadriven.testng.TestNGParametersTest"/>
         </classes>
