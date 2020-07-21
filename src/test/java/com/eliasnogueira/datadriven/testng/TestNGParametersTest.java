@@ -41,8 +41,6 @@ import org.testng.annotations.Test;
  */
 public class TestNGParametersTest {
 
-    private static final String VALUE = "7.00";
-
     @Test(testName = "Getting data from xml test suite")
     @Parameters({"product", "amount"})
     public void getDataFromXmlSuite(String product, String amount) {
