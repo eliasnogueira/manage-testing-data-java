@@ -27,7 +27,9 @@ package com.eliasnogueira.properties.owner;
 import java.net.URL;
 import org.aeonbits.owner.Config;
 
-@Config.Sources({"classpath:data.properties"})
+@Config.Sources({
+    "system:properties",
+    "classpath:data.properties"})
 public interface PropertiesFile extends Config {
 
     String user();
