@@ -13,7 +13,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <junit.jupiter.version>5.7.0</junit.jupiter.version>
         <testng.version>7.3.0</testng.version>
-        <log4j.version>2.13.3</log4j.version>
+        <log4j.version>2.15.0</log4j.version>
         <jackson.version>2.12.0-rc1</jackson.version>
         <owner.version>1.0.12</owner.version>
         <assertj.version>3.17.2</assertj.version>
