@@ -1,3 +1,5 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
 <suite name="My test suite">
     <test name="numbersXML">
         <parameter name="product" value="Micro SD Card 16Gb"/>
