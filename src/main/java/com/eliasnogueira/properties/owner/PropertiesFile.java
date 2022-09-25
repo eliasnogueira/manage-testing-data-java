@@ -24,12 +24,13 @@
 
 package com.eliasnogueira.properties.owner;
 
-import java.net.URL;
 import org.aeonbits.owner.Config;
 
+import java.net.URL;
+
 @Config.Sources({
-    "system:properties",
-    "classpath:data.properties"})
+        "system:properties",
+        "classpath:data.properties"})
 public interface PropertiesFile extends Config {
 
     String user();

@@ -24,9 +24,9 @@
 
 package com.eliasnogueira.properties.plain;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class PropertiesFileTest {
 
@@ -55,8 +55,6 @@ class PropertiesFileTest {
 
     @Test
     void propertyNotFound() {
-        assertThat(
-            ReadProperties.getInstance().getValue("propertyDoesNotExists")).
-            isNullOrEmpty();
+        assertThat(ReadProperties.getInstance().getValue("propertyDoesNotExists")).isNullOrEmpty();
     }
 }

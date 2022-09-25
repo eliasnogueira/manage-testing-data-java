@@ -24,11 +24,12 @@
 
 package com.eliasnogueira.datadriven.testng;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.eliasnogueira.datadriven.TestNGDataProvider;
-import java.math.BigDecimal;
 import org.testng.annotations.Test;
+
+import java.math.BigDecimal;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /*
  * The dataProvider attribute on @Test annotation tries to find the method name ( cheapProducts or expensiveProducts )

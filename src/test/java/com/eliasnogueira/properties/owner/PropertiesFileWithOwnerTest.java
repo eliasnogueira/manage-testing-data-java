@@ -24,10 +24,11 @@
 
 package com.eliasnogueira.properties.owner;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 import java.net.URL;
-import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class PropertiesFileWithOwnerTest {
 
@@ -56,13 +57,13 @@ class PropertiesFileWithOwnerTest {
 
         // the following method validate the values and the correct sequence of the URL placeholder composition
         assertThat(
-            endpoint.toString()).
-            containsSequence(
-                HTTP,
-                environment,
-                DOT,
-                domain,
-                COMMA,
-                String.valueOf(port));
+                endpoint.toString()).
+                containsSequence(
+                        HTTP,
+                        environment,
+                        DOT,
+                        domain,
+                        COMMA,
+                        String.valueOf(port));
     }
 }

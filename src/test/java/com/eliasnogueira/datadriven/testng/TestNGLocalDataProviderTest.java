@@ -24,11 +24,12 @@
 
 package com.eliasnogueira.datadriven.testng;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import java.math.BigDecimal;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.math.BigDecimal;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /*
  * The dataProvider attribute on @Test class tries to find the cheapProducts method that must exists in this class
@@ -48,9 +49,9 @@ public class TestNGLocalDataProviderTest {
     @DataProvider
     public static Object[][] cheapProducts() {
         return new Object[][]{
-            {"Micro SD Card 16Gb", new BigDecimal("6.09")},
-            {"JBL GO 2", new BigDecimal("22.37")},
-            {"iPad Air Case", new BigDecimal("14.99")},
+                {"Micro SD Card 16Gb", new BigDecimal("6.09")},
+                {"JBL GO 2", new BigDecimal("22.37")},
+                {"iPad Air Case", new BigDecimal("14.99")},
         };
     }
 

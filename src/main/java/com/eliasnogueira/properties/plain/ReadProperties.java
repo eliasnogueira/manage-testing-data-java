@@ -24,10 +24,11 @@
 
 package com.eliasnogueira.properties.plain;
 
-import java.io.FileInputStream;
-import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.io.FileInputStream;
+import java.util.Properties;
 
 public class ReadProperties {
 
@@ -39,7 +40,7 @@ public class ReadProperties {
     private ReadProperties() {
         properties = new Properties();
 
-        try(FileInputStream fileInputStream = new FileInputStream("src/test/resources/data.properties")) {
+        try (FileInputStream fileInputStream = new FileInputStream("src/test/resources/data.properties")) {
             properties.load(fileInputStream);
         } catch (Exception e) {
             LOGGER.error(e);

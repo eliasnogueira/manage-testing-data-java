@@ -24,10 +24,10 @@
 
 package com.eliasnogueira.datadriven.testng;
 
-import static org.assertj.core.api.Assertions.*;
-
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 
 /*
@@ -35,7 +35,7 @@ import org.testng.annotations.Test;
  *  - the @Parameters only accepts String as parameter
  *  - every parameter value should have a parameter related on the test methods
  *  - it should run only with the TestNG suite through XML file
- *  --- there's a XML file on src/test/resource called testng_data_parameter.xml that will run this class using data
+ *  --- there's an XML file on src/test/resource called testng_data_parameter.xml that will run this class using data
  *
  * It's better to use this approach when you need to get a value as a configuration.
  */
