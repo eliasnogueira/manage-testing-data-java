@@ -6,7 +6,7 @@
 
     <groupId>ocm.eliasnogueira</groupId>
     <artifactId>manage-testing-data-java</artifactId>
-    <version>1.2.0-SNAPSHOT</version>
+    <version>1.2.1-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git@github.com:eliasnogueira/manage-testing-data-java.git</connection>
@@ -16,12 +16,12 @@
     <properties>
         <java-compiler.version>17</java-compiler.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <junit.jupiter.version>5.9.1</junit.jupiter.version>
-        <testng.version>7.6.1</testng.version>
-        <log4j.version>2.19.0</log4j.version>
-        <jackson.version>2.13.4</jackson.version>
+        <junit.jupiter.version>5.9.2</junit.jupiter.version>
+        <testng.version>7.7.1</testng.version>
+        <log4j.version>2.20.0</log4j.version>
+        <jackson.version>2.14.2</jackson.version>
         <owner.version>1.0.12</owner.version>
-        <assertj.version>3.23.1</assertj.version>
+        <assertj.version>3.24.2</assertj.version>
 
     </properties>
 
@@ -74,6 +74,7 @@
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>

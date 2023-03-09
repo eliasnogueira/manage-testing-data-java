@@ -5,6 +5,7 @@ Please feel free to contribute and send your pull requests with either better or
 
 ## Run this project
 As it is a testing project you don't need too much. You will need the following:
+
 * an IDE (I suggest IntelliJ IDEA)
 * Java JDK 17+
 * Maven
