@@ -6,7 +6,7 @@
 
     <groupId>com.eliasnogueira</groupId>
     <artifactId>manage-testing-data-java</artifactId>
-    <version>1.2.3-SNAPSHOT</version>
+    <version>1.2.4-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git@github.com:eliasnogueira/manage-testing-data-java.git</connection>
@@ -14,14 +14,17 @@
     </scm>
 
     <properties>
-        <java-compiler.version>17</java-compiler.version>
+        <java-compiler.version>21</java-compiler.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-        <junit.jupiter.version>5.10.0</junit.jupiter.version>
+        <junit.jupiter.version>5.10.1</junit.jupiter.version>
         <testng.version>7.8.0</testng.version>
-        <log4j.version>2.20.0</log4j.version>
-        <jackson.version>2.15.2</jackson.version>
+        <log4j.version>2.21.1</log4j.version>
+        <jackson.version>2.15.3</jackson.version>
         <owner.version>1.0.12</owner.version>
         <assertj.version>3.24.2</assertj.version>
+
+        <!-- security libraries -->
+        <jquery.version>3.7.1</jquery.version>
 
     </properties>
 
@@ -43,6 +46,12 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.webjars</groupId>
+                    <artifactId>jquery</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -87,6 +96,14 @@
             <artifactId>owner</artifactId>
             <version>${owner.version}</version>
         </dependency>
+
+        <!-- security libraries -->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>${jquery.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
