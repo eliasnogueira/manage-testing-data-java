@@ -23,7 +23,6 @@
  */
 package com.eliasnogueira.datadriven;
 
-
 import org.junit.jupiter.params.provider.Arguments;
 
 import java.math.BigDecimal;
