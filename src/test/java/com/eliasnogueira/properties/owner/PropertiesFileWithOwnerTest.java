@@ -45,7 +45,7 @@ class PropertiesFileWithOwnerTest {
 
     @Test
     void urlPlaceholderComposition() {
-        final String HTTP = "http://";
+        final String HTTP = "https://";
         final String DOT = ".";
         final String COMMA = ":";
 
