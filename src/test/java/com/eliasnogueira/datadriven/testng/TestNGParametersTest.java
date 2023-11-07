@@ -23,6 +23,7 @@
  */
 package com.eliasnogueira.datadriven.testng;
 
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -41,7 +42,7 @@ public class TestNGParametersTest {
 
     @Test(testName = "Getting data from xml test suite")
     @Parameters({"product", "amount"})
-    public void getDataFromXmlSuite(String product, String amount) {
+    public void getDataFromXmlSuite(@Optional("Micro SD Card 16Gb") String product, @Optional("7.00") String amount) {
         final String expectedProduct = "Micro SD Card 16Gb";
         final String expectedAmount = "7.00";
 
