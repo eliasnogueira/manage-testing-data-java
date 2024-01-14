@@ -6,7 +6,7 @@
 
     <groupId>com.eliasnogueira</groupId>
     <artifactId>manage-testing-data-java</artifactId>
-    <version>1.2.5-SNAPSHOT</version>
+    <version>1.2.6-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git@github.com:eliasnogueira/manage-testing-data-java.git</connection>
@@ -15,13 +15,14 @@
 
     <properties>
         <java-compiler.version>21</java-compiler.version>
-        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
+
         <junit.jupiter.version>5.10.1</junit.jupiter.version>
-        <testng.version>7.8.0</testng.version>
+        <testng.version>7.9.0</testng.version>
         <log4j.version>2.21.1</log4j.version>
-        <jackson.version>2.16.0</jackson.version>
+        <jackson.version>2.16.1</jackson.version>
         <owner.version>1.0.12</owner.version>
-        <assertj.version>3.24.2</assertj.version>
+        <assertj.version>3.25.1</assertj.version>
 
         <!-- security libraries -->
         <jquery.version>3.7.1</jquery.version>
