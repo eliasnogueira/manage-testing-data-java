@@ -30,6 +30,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
+@SuppressWarnings("unused")
 public class JUnitExternalData {
 
     private JUnitExternalData() {
