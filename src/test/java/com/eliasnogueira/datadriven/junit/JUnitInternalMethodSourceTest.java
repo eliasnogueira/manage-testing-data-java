@@ -36,7 +36,7 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 /*
  * CONS WITH THIS APPROACH
- * The only problem about using an external method source is that the class and method might be show from your IDE
+ * The only problem about using an external method source is that the class and method might be shown from your IDE
  * the 'is never used' alert message
  *
  * PROS WITH THIS APPROACH

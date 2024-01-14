@@ -35,6 +35,7 @@ public class JUnitExternalData {
     private JUnitExternalData() {
     }
 
+    @SuppressWarnings("unused")
     public static Stream<Arguments> cheapProducts() {
         return Stream.of(
                 arguments("Micro SD Card 16Gb", new BigDecimal("6.09")),
@@ -43,6 +44,7 @@ public class JUnitExternalData {
         );
     }
 
+    @SuppressWarnings("unused")
     public static Stream<Arguments> expensiveProducts() {
         return Stream.of(
                 arguments("iPhone 11 Pro", new BigDecimal("999.00")),
