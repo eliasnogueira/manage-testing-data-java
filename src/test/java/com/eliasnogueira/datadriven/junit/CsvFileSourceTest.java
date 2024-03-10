@@ -31,15 +31,14 @@ import java.math.BigDecimal;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class JUnitCSVSourceTest {
+class CsvFileSourceTest {
 
     private static final String MAXIMUM_PRICE = "30.0";
 
     @DisplayName("Products should not exceed the maximum price")
     @ParameterizedTest(name = "product ''{0}'' of amount ${1} does not exceeds $" + MAXIMUM_PRICE)
-    @CsvFileSource(resources = "/products.csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = {"/products.csv", "/products-no.csv"}, numLinesToSkip = 1)
     void productsLassThan(String product, BigDecimal amount) {
-
         assertThat(product).isNotEmpty();
         assertThat(amount).isLessThanOrEqualTo(new BigDecimal(MAXIMUM_PRICE));
     }
