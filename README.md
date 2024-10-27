@@ -8,7 +8,7 @@ Please feel free to contribute and send your pull requests with either better or
 As it is a testing project you don't need too much. You will need the following:
 
 * IDE of your choice
-* Java JDK 22+
+* Java JDK 23+
 * Maven
 
 ## Managing  data through a property file
