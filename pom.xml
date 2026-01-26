@@ -24,7 +24,7 @@
         <log4j.version>2.23.1</log4j.version>
         <jackson.version>2.18.0</jackson.version>
         <owner.version>1.0.12</owner.version>
-        <assertj.version>3.26.3</assertj.version>
+        <assertj.version>3.27.7</assertj.version>
     </properties>
 
     <dependencies>
