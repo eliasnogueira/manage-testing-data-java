@@ -47,14 +47,14 @@ class PropertiesFileWithOwnerTest {
     void urlPlaceholderComposition() {
         final String HTTP = "https://";
         final String DOT = ".";
-        final String COMMA = ":";
+        final String COLON = ":";
 
         String environment = propertiesFile.environmentName();
         String domain = propertiesFile.domain();
         int port = propertiesFile.port();
         URL endpoint = propertiesFile.endpoint();
 
-        // the following method validate the values and the correct sequence of the URL placeholder composition
+        // the following method validates the values and the correct sequence of the URL placeholder composition
         assertThat(
                 endpoint.toString()).
                 containsSequence(
@@ -62,7 +62,7 @@ class PropertiesFileWithOwnerTest {
                         environment,
                         DOT,
                         domain,
-                        COMMA,
+                        COLON,
                         String.valueOf(port));
     }
 }
