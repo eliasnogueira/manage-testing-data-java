@@ -26,11 +26,13 @@ package com.eliasnogueira.properties.plain;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class ReadProperties {
 
+    private static final String PROPERTIES_RESOURCE = "/data.properties";
     private static final Logger LOGGER = LogManager.getLogger(ReadProperties.class.getName());
 
     private static ReadProperties instance = null;
@@ -39,10 +41,18 @@ public class ReadProperties {
     private ReadProperties() {
         properties = new Properties();
 
-        try (FileInputStream fileInputStream = new FileInputStream("src/test/resources/data.properties")) {
-            properties.load(fileInputStream);
-        } catch (Exception e) {
-            LOGGER.error(e);
+        try (InputStream inputStream = ReadProperties.class.getResourceAsStream(PROPERTIES_RESOURCE)) {
+            if (inputStream == null) {
+                String message = "Properties resource was not found: " + PROPERTIES_RESOURCE;
+                LOGGER.error(message);
+                throw new IllegalStateException(message);
+            }
+
+            properties.load(inputStream);
+        } catch (IOException e) {
+            String message = "Unable to load properties resource: " + PROPERTIES_RESOURCE;
+            LOGGER.error(message, e);
+            throw new IllegalStateException(message, e);
         }
     }
 
