@@ -38,7 +38,7 @@ class CsvFileSourceTest {
     @DisplayName("Products should not exceed the maximum price")
     @ParameterizedTest(name = "product ''{0}'' of amount ${1} does not exceeds $" + MAXIMUM_PRICE)
     @CsvFileSource(resources = "/products.csv", numLinesToSkip = 1)
-    void productsLassThan(String product, BigDecimal amount) {
+    void productsLessThan(String product, BigDecimal amount) {
         assertThat(product).isNotEmpty();
         assertThat(amount).isLessThanOrEqualTo(new BigDecimal(MAXIMUM_PRICE));
     }
