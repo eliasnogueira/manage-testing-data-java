@@ -44,7 +44,7 @@ class ArgumentProviderTest {
     private static final String MAXIMUM_PRICE = "30.0";
 
     @DisplayName("Products should not exceed the maximum price")
-    @ParameterizedTest(name = "product ''{0}'' of amount ${1} does not exceeds $" + MAXIMUM_PRICE)
+    @ParameterizedTest(name = "product ''{0}'' of amount ${1} does not exceed $" + MAXIMUM_PRICE)
     @ArgumentsSource(ProductsDataArgumentProvider.class)
     void cheapProducts(String product, BigDecimal amount) {
         assertThat(product).isNotEmpty();
