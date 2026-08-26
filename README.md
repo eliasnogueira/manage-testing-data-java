@@ -5,10 +5,10 @@ Please feel free to contribute and send your pull requests with either better or
 
 ## Run this project
 
-As it is a testing project you don't need too much. You will need the following:
+As it is a testing project, you don't need too much. You will need the following:
 
 * IDE of your choice
-* Java JDK 23+
+* Java JDK 26+
 * Maven
 
 ## Managing  data through a property file
